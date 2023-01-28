@@ -79,9 +79,10 @@ const profile = {
     weight: 50
 };
 
-app.get('/getProfile', (req, res) => {
+app.get('/Profile', (req, res) => {
     res.json(profile);
 });
+
 app.get("/getProfile",  async (req, res) => {
   const {password, email} = req.body
   const user =await  userModel.findOne({email})
