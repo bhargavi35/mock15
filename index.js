@@ -83,6 +83,13 @@ app.get('/getProfile', (req, res) => {
     res.json(profile);
 });
 
+app.get("/profile",  async (req, res) => {
+    const {password, email} = req.body
+    const user =await  userModel.findOne({email})
+  res.send({ email})
+  })
+  
+  
 app.get("/getUser", async (req, res) => {
     try {
         const user = await userModel.findById(req.user.userID);
