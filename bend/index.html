@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    *{
+        margin: 2%;
+        padding: 0;
+    }
+    input{
+        font-size: large;
+        width: 20%;
+        text-align: justify;
+        text-transform: capitalize;
+    }
+    button{
+        background-color: lightblue;
+        border-radius: 2%;
+        border: 1px solid black;
+        width: 10%;
+        font-size: large;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>BMI</h1>
+    <form action="/getBmi" method="post">
+
+        <input type="text" name="Name" placeholder="Enter name" id="name"><br>
+        <input type="text" name="Height"placeholder="Enter height" id="height"><br>
+        <input type="text" name="Weight" placeholder="Enter weight" id="weight"><br>
+        <button type="submit">GET BMI</button>
+
+    </form>
+</body>
+
+</html>
