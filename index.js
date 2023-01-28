@@ -110,7 +110,7 @@ app.get("/getUser", async (req, res) => {
     }
 })
 const bmiHis = {};
-app.get('/getBmi', (req, res) => {
+app.get('/bmi', (req, res) => {
     const token = req.headers.authorization.split(' ')[1];
     const decoded = jwt.verify(token, 'hash');
     const bag = bmiHis[decoded.email] || [];
